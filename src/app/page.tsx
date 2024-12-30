@@ -43,7 +43,8 @@ const Page = () => {
             placeholder="Data de nascimento" 
             className="border-b border-gray-300"
           />
-          <select {...register('customCenter')}>
+          <select {...register('customCenter')} 
+            className="border-b border-gray-300">
             {centroDeCusto.map(item => 
               <option key={item.id}>{item.name}</option>
             )}
